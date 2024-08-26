@@ -38,57 +38,56 @@
     </style>
   </head>
   <body class="font-manrope">
-    <header class="bg-stone-100 pt-10">
-      <nav>
-        <div class="navbar container mx-auto flex justify-between">
-          <div class="flex flex-row-reverse justify-between">
-            <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-8 w-8 bg-white rounded-full p-1"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
-              </div>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+    <header class="bg-base-100 pt-10">
+      <!-- Navbar -->
+      <div class="navbar bg-base-100 container mx-auto">
+        <div class="navbar-start">
+          <i
+            class="fa-solid fa-arrow-right bg-[#ABEF5F] text-black rounded-full p-1 -rotate-45 w-8 h-8 flex items-center justify-center text-2xl"
+          ></i>
+          <a class="btn btn-ghost text-3xl font-extrabold text-[#212121]"
+            >Rinterio</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="font-extrabold text-[#494949]">Home</a></li>
+            <li><a class="text-[#737373]">Services</a></li>
+            <li><a class="text-[#737373]">Portfolio</a></li>
+            <li><a class="text-[#737373]">Blogs</a></li>
+            <li><a class="text-[#737373]">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8 bg-white rounded-full p-1"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
               >
-                <li><a>Home</a></li>
-                <li><a>Services</a></li>
-                <li><a>Portfolio</a></li>
-                <li><a>Blogs</a></li>
-                <li><a>Contact Us</a></li>
-              </ul>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
             </div>
-            <div class="flex items-center justify-center">
-              <i
-                class="fa-solid fa-arrow-right bg-[#ABEF5F] text-black rounded-full p-1 -rotate-45 w-8 h-8 flex items-center justify-center text-2xl"
-              ></i>
-              <a class="btn btn-ghost text-3xl font-extrabold text-[#212121]"
-                >Rinterio</a
-              >
-            </div>
-          </div>
-          <div class="hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
-              <li><a class="font-extrabold text-[#494949]">Home</a></li>
-              <li><a class="text-[#737373]">Services</a></li>
-              <li><a class="text-[#737373]">Portfolio</a></li>
-              <li><a class="text-[#737373]">Blogs</a></li>
-              <li><a class="text-[#737373]">Contact Us</a></li>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-24 p-2 shadow"
+            >
+              <li><a>Home</a></li>
+              <li><a>Service</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
             </ul>
           </div>
-          <div class="hidden lg:flex space-x-2">
+          <div class="hidden lg:flex items-center space-x-2">
             <i
               class="text-[#737373] p-2 bg-white rounded-full fa-solid fa-magnifying-glass"
             ></i>
@@ -103,7 +102,8 @@
             ></a>
           </div>
         </div>
-      </nav>
+      </div>
+      <!-- Banner Section -->
       <div class="container mx-auto pb-10 lg:pb-24">
         <div class="w-5/6 mx-auto flex flex-col space-y-12">
           <img class="" src="./assets/banner.png" alt="" />
@@ -131,7 +131,7 @@
     <main>
       <!-- Thoughtful Design Section -->
       <section>
-        <div class="hero bg-base-200 lg:pb-20">
+        <div class="hero bg-base-200 lg:pb-20 lg:pt-12">
           <div class="hero-content flex-col-reverse lg:flex-row-reverse">
             <img
               src="./assets/house.png"
@@ -181,7 +181,7 @@
                 <img src="./assets/residential.png" alt="" />
                 <div>
                   <h6 class="text-xl font-extrabold text-[#494949]">
-                    Commercial
+                    Residential
                   </h6>
                   <p class="font-medium text-[#737373]">
                     The barn house captivates with its blend of rustic charm and
@@ -194,7 +194,7 @@
         </div>
       </section>
       <!-- Work Process Section -->
-      <section class="bg-base-200">
+      <section class="bg-base-200 lg:pb-16">
         <div class="container mx-auto flex flex-col items-center p-5 space-y-5">
           <div
             class="lg:mx-0 mx-auto flex justify-center space-x-2 bg-white p-2 rounded-3xl lg:w-1/5 w-1/2 mb-4"
@@ -263,7 +263,7 @@
             Explore our Latest works
           </button>
         </div>
-        <h2 class="text-[#212121] text-2xl font-bold text-center py-8">
+        <h2 class="text-[#212121] text-3xl font-extrabold text-center py-8">
           Our Latest Portfolio
         </h2>
         <p class="font-medium text-[#494949] text-center pb-10 lg:w-2/3">
@@ -346,6 +346,66 @@
               class="lg:h-[180px] lg:col-span-1 w-full my-8 p-4 lg:p-1 bg-[#ffffff] rounded-xl"
             >
               <img class="w-full lg:h-full" src="./assets/img5.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Extra Section -->
+      <section
+        class="container mx-auto flex flex-col items-center justify-center px-4 space-y-5 py-10"
+      >
+        <h2 class="text-5xl font-bold text-[#212121] text-center">
+          Have you any Question?
+        </h2>
+        <p class="text-[#494949] font-medium text-center">
+          We have a bunch of question and answers feel free to browse it.
+        </p>
+        <div
+          class="lg:flex lg:items-center lg:justify-center space-y-5 lg:space-x-5"
+        >
+          <div class="lg:w-2/3">
+            <img
+              class="lg:max-h-72 w-full bg-gray-200 lg:bg-gray-100 p-4 rounded-2xl"
+              src="./assets/question.jpg"
+              alt=""
+            />
+          </div>
+          <div class="lg:w-5/6 space-y-2 pb-5">
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" checked="checked" />
+              <div class="collapse-title text-xl font-medium">
+                What permits are needed before construction?
+              </div>
+              <div class="collapse-content">
+                <p>
+                  Zoning, building permits, and inspections required before
+                  starting construction.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl font-medium">
+                How is the construction site prepared?
+              </div>
+              <div class="collapse-content">
+                <p>
+                  Clearing, grading, foundation setting, and temporary utilities
+                  are established.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl font-medium">
+                What materials will be used?
+              </div>
+              <div class="collapse-content">
+                <p>
+                  Quality materials sourced considering design, budget, and
+                  availability.
+                </p>
+              </div>
             </div>
           </div>
         </div>
