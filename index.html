@@ -137,7 +137,12 @@
               src="./assets/rectangle.png"
               class="max-w-full rounded-lg shadow-2xl"
             />
-            <div class="">
+            <div class="relative">
+              <img
+                class="hidden lg:block border-dashed border-2 border-gray-400 h-24 w-32 absolute -top-20 -left-8"
+                src="./assets/vector.png"
+                alt=""
+              />
               <div
                 class="lg:mx-0 mx-auto flex justify-center space-x-2 bg-white p-2 rounded-3xl lg:w-1/5 w-1/2 mb-4"
               >
@@ -249,7 +254,7 @@
         class="bg-gray-50 p-4 py-10 container mx-auto flex flex-col items-center"
       >
         <div
-          class="mx-auto flex justify-center space-x-2 bg-[#ABEF5F33] p-2 rounded-3xl lg:w-1/5 w-3/4 mb-4"
+          class="mx-auto flex justify-center space-x-2 bg-[#ABEF5F33] p-2 rounded-3xl lg:w-2/5 w-3/4 mb-4"
         >
           <i
             class="fa-solid fa-arrow-right bg-[#ABEF5F33] text-[#494949] rounded-full p-1 w-8 h-8 flex items-center justify-center text-2xl"
@@ -285,7 +290,7 @@
                     View Details
                   </button>
                   <i
-                    class="fa-solid fa-arrow-right bg-[#ABEF5F] text-black rounded-full p-1 -rotate-45 w-8 h-8 flex items-center justify-center text-2xl -ml-12"
+                    class="fa-solid fa-arrow-right bg-[#ABEF5F] text-black rounded-full p-1 -rotate-45 w-8 h-8 flex items-center justify-center text-2xl -ml-12 lg:-ml-24"
                   ></i>
                 </div>
               </div>
@@ -295,9 +300,9 @@
             </div>
           </div>
           <div
-            class="w-full lg:my-4 my-8 p-4 bg-[#ffffff] lg:bg-gray-50 rounded-xl"
+            class="lg:hidden w-full lg:my-4 my-8 p-4 bg-[#ffffff] lg:bg-gray-50 rounded-xl"
           >
-            <img class="lg:hidden w-full" src="./assets/img5.png" alt="" />
+            <img class="w-full" src="./assets/img5.png" alt="" />
           </div>
 
           <div
@@ -347,7 +352,7 @@
       </section>
       <!-- Next Project Section -->
       <section
-        class="container mx-auto bg-[url('/assets/bg.jpg')] bg-cover mt-4 pb-10 pt-20 lg:px-48"
+        class="container mx-auto bg-cover mt-4 pb-10 pt-20 lg:px-48 bg-[url('./assets/bg.jpg')]"
       >
         <div class="p-5">
           <div
